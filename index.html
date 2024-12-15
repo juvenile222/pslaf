@@ -1,87 +1,273 @@
- <!--
-Design by Bryant Smith
-http://www.pslaf.com
-http://www.aszx.net
-email: templates [-at-] bryantsmith [-dot-] com
-Released under Creative Commons Attribution 2.5 Generic.  In other words, do with it what you please; but please leave the link if you'd be so kind :)
-
-Name       : Transparent Blue
-Version    : 1.0
-Released   : 2009-07-28
--->
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<title>P S L A F</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <style>
+        /* Basic Styling - Customize as you like! */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        header {
+            background: #35424a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            opacity: 0.75;
+        }
+
+        nav a:hover {
+            opacity: 1;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background: url('your-background-image.jpg') no-repeat 0 -400px;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        #showcase p {
+            font-size: 20px;
+        }
+
+        #newsletter {
+            padding: 15px;
+            color: #fff;
+            background: #35424a;
+        }
+
+        #newsletter h3 {
+            float: left;
+        }
+
+        #newsletter form {
+            float: right;
+            margin-top: 15px;
+        }
+
+        #newsletter input[type="email"] {
+            padding: 4px;
+            height: 25px;
+            width: 250px;
+        }
+
+        #boxes {
+            margin-top: 20px;
+        }
+
+        #boxes .box {
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+
+        #boxes .box img {
+            width: 90px;
+        }
+
+        aside#sidebar {
+            float: right;
+            width: 30%;
+            margin-top: 10px;
+        }
+
+        aside#sidebar .quote input,
+        aside#sidebar .quote textarea {
+            width: 90%;
+            padding: 5px;
+        }
+
+        article#main-col {
+            float: left;
+            width: 65%;
+        }
+
+        ul#services {
+            list-style: none;
+        }
+
+        ul#services li {
+            margin: 20px 0;
+            border: #cccccc dotted 1px;
+            padding: 20px;
+        }
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #e8491d;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li,
+            #newsletter h3,
+            #newsletter form,
+            #boxes .box,
+            article#main-col,
+            aside#sidebar {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+
+            header {
+                padding-bottom: 20px;
+            }
+
+            #showcase h1 {
+                font-size: 40px;
+            }
+
+            #newsletter button,
+            .quote button {
+                display: block;
+                width: 100%;
+            }
+
+            #newsletter form input[type="email"],
+            .quote input,
+            .quote textarea {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <div id="page">
-		
-        <div id="header">
-            <ul>
-           	   	<li><a href="#">Home</a></li>
-               	<li><a href="#">School</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Muggulu</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <h1>కవి పరిచయం</h1>
-        </div>
-  <div class="dotted_line"></div>
-        <div id="main">
-        
-        	<div class="main_left">
-            	<img src="sample_image.jpg" alt="Transparent Blue by pslaf.com" />
-                <h1>సాహితి,ప్రణతి,లోక్య</h1>
-				<h3>Story by Blade Babji</h3>
-				<h3>Illustrated by Sarvam</h3>
-                
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Your Name</h1>
             </div>
-            
-           	<div class="main_right">
-                <h2></h2>
-                
-                <p>
-ముగ్గురు ముద్దుల ముచ్చటైన పిల్లలు, ప్రణతి, సాహితి, లోక్య. వాళ్ళు ముగ్గురూ కజిన్స్. ప్రణతి అందరికన్నా పెద్దది, తెలివైనది, ధైర్యవంతురాలు. సాహితి అల్లరిది, చిలిపిది, అందరినీ నవ్విస్తుంటుంది. లోక్య మాత్రం చాలా అమాయకురాలు, అందరితోనూ ప్రేమగా ఉంటుంది. వాళ్ళు వేసవి సెలవుల్లో వాళ్ళ అమ్మమ్మ వాళ్ళ ఊరికి వెళ్లారు. అక్కడ వాళ్ళకి ఎన్నో ఆసక్తికరమైన సంఘటనలు ఎదురయ్యాయి.
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#resume">Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-ఒకరోజు ముగ్గురూ కలిసి ఊరి చివర ఉన్న పెద్ద మామిడి తోటలోకి వెళ్లారు. అక్కడ ఎన్నో రకాల పక్షులు, జంతువులు ఉన్నాయి. వాళ్ళు చెట్లెక్కి పళ్లు కోసుకుని తిన్నారు, చెట్ల కింద దాగుడుమూత ఆడుకున్నారు, బురదలో దొర్లి ఆడుకున్నారు. సాయంత్రం అయ్యేసరికి వాళ్ళు చాలా అలసిపోయారు. ఇంటికి వెళ్ళాలని చూస్తే, వాళ్ళకి దారి తెలియలేదు. వాళ్ళు తోటలోనే తిరుగుతూ ఉన్నారు.
+    <section id="showcase">
+        <div class="container">
+            <h1>Professional Resume Website</h1>
+            <p>Showcase your skills and experience to land your dream job.</p>
+        </div>
+    </section>
 
-లోక్యకి భయం వేసింది. "అమ్మమ్మ, నాన్న" అని ఏడుస్తుంది. ప్రణతి ధైర్యం చెప్పింది. "ఏడవకు లోక్య, మనం తప్పకుండా ఇంటికి చేరుకుంటాం. సాహితి, నువ్వు ఏడవకు. మనం కలిసి ఉంటే ఏ భయం లేదు."
+    <section id="newsletter">
+        <div class="container">
+            <h3>Subscribe To Our Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
 
-సాహితి మాత్రం ఏడుపు ఆపలేదు. "నాకు ఆకలేస్తుంది, దాహం వేస్తుంది. ఇంటికి వెళ్ళాలి" అని ఏడుస్తుంది. ప్రణతికి ఒక ఉపాయం తట్టింది. "సాహితి, నువ్వు పాటలు పాడు. నీ పాటలు విన్నా అమ్మమ్మ మన దగ్గరికి వస్తుంది."
-
-సాహితి పాటలు పాడటం మొదలుపెట్టింది. ఆమె గొంతు చాలా బాగుంటుంది. ఆమె పాటలు విని పక్షులు కూడా ఆమెతో పాటు పాడటం మొదలుపెట్టాయి. లోక్య కూడా ఏడుపు ఆపి, సాహితి పాటలు వింటుంది.
-
-అంతలో వాళ్ళకి ఒక వింత శబ్దం వినిపించింది. వాళ్ళు ఆ శబ్దం వస్తున్న దిశగా వెళ్లారు. అక్కడ ఒక చిన్న కుటీరం ఉంది. ఆ కుటీరం నుండి ఒక ముసలి ఆవిడ బయటికి వచ్చింది. ఆమె చాలా దయగలదిగా కనిపించింది.
-
-"ఏమమ్మా, మీరు ఎవరు? ఇక్కడ ఏం చేస్తున్నారు?" అని ఆమె అడిగింది.
-
-ప్రణతి జరిగిందంతా ఆమెకి చెప్పింది. ఆమె వాళ్ళని లోపలికి తీసుకువెళ్లి, వాళ్ళకి పాలు, పండ్లు ఇచ్చింది. వాళ్ళు ఆకలి తీర్చుకున్నాక, ఆమె వాళ్ళని వాళ్ళ అమ్మమ్మ వాళ్ళ ఇంటికి తీసుకువెళ్లింది.
-
-అమ్మమ్మ వాళ్ళని చూసి చాలా సంతోషించింది. ఆమె వాళ్ళని కౌగిలించుకుని ముద్దులు పెట్టుకుంది. ఆమె ఆ ముసలి ఆవిడకి ధన్యవాదాలు చెప్పింది.
-
-ఆ రోజు నుండి ప్రణతి, సాహితి, లోక్య ముగ్గురూ ఆ ముసలి ఆవిడని తరచూ కలుసుకునేవారు. ఆమె వాళ్ళకి ఎన్నో కథలు చెప్పేది, పాటలు నేర్పేది. వాళ్ళు ఆమెతో చాలా సంతోషంగా గడిపేవారు.
-
-వేసవి సెలవులు అయిపోయాయి. ప్రణతి, సాహితి, లోక్య వాళ్ళ ఊరికి వెళ్ళిపోయారు. కానీ వాళ్ళు ఆ వేసవిలో జరిగిన సంఘటనలని, ఆ ముసలి ఆవిడని ఎప్పటికీ మర్చిపోలేదు.
-				</p>
-
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="image1.png" alt="Image 1">
+                <h3>About Me</h3>
+                <p>Learn more about my background, skills, and experience.</p>
             </div>
-            
-           	<div class="main_bottom"></div>
-            
+            <div class="box">
+                <img src="image2.png" alt="Image 2">
+                <h3>My Resume</h3>
+                <p>Download a copy of my resume in PDF format.</p>
+            </div>
+            <div class="box">
+                <img src="image3.png" alt="Image 3">
+                <h3>Contact Me</h3>
+                <p>Get in touch with me for any inquiries or opportunities.</p>
+            </div>
         </div>
-        
-        
-        <div class="dotted_line"></div>
-        <div id="footer">
-        <p>
-        <a href="http://www.pslaf.com">pslaf.com</a></p>
-      </div>
-        
-        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Write a detailed overview of your professional background, skills, and experiences. Include your career goals and aspirations.</p> 
+    </section>
+
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <p>Provide a link to download your resume in PDF format.</p>
+        <a href="your-resume.pdf" class="button_1" download>Download Resume</a>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div id="projects-content">
+            </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <form id="contact-form" action="YOUR_FORMSPREE_ENDPOINT" method="post"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Your Name - Resume Website, Copyright &copy; 2024</p>
+    </footer>
 </body>
 </html>
