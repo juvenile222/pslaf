@@ -233,8 +233,8 @@ Contact
 
 Contact Form
 
-Full name
-Email address
-Your Message
+Full name:
+Email address:
+Your Message:
 
 Send Message
